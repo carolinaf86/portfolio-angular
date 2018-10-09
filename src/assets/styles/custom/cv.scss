@@ -1,0 +1,44 @@
+@import '../theme/variables';
+@import '../theme/mixins';
+
+#cv-section {
+
+  padding-bottom: 2rem !important;
+  p {
+    @include sans-serif-font;
+  }
+
+  .cv-row {
+    padding-top: 50px;
+    border-bottom: $gray-700 1px solid;
+    padding-bottom: 10px;
+  }
+
+  #name-row {
+    padding-top: 50px;
+  }
+
+  #basic-info {
+    p {
+      text-align: center;
+    }
+  }
+
+  #highlight {
+    margin-top: 30px;
+    p {
+      text-align: center;
+    }
+  }
+
+  #skills-row, #experience-row {
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  #languages-row {
+    border-bottom: none;
+  }
+
+}

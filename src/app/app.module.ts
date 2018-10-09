@@ -13,6 +13,7 @@ import { ProjectsComponent } from './home/projects/projects.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
 import {NgsRevealModule} from 'ngx-scrollreveal';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
