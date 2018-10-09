@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {PageScrollConfig} from "ngx-page-scroll";
+import {NgsRevealConfig} from "ngx-scrollreveal";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,14 @@ import {PageScrollConfig} from "ngx-page-scroll";
 })
 export class AppComponent {
 
-  constructor () {
-    // Configure scroll to
+  constructor (ngsRevealConfig: NgsRevealConfig) {
+    // Configure scroll-to
     PageScrollConfig.defaultScrollOffset = 50;
     PageScrollConfig.defaultDuration = 750;
+
+    // Configure scroll-reveal
+    ngsRevealConfig.reset = true;
+    ngsRevealConfig.distance = '10px';
+    ngsRevealConfig.easing = 'ease';
   }
 }

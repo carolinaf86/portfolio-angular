@@ -28,7 +28,9 @@
     "core-js": "^2.5.4",
     "ngx-bootstrap": "^3.0.1",
     "ngx-page-scroll": "^5.0.0",
+    "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~6.2.0",
+    "scrollreveal": "^4.0.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

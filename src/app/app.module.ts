@@ -11,6 +11,7 @@ import { SkillsComponent } from './home/skills/skills.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ProjectsComponent } from './home/projects/projects.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {NgxPageScrollModule} from "ngx-page-scroll";
     RouterModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgsRevealModule
   ],
   providers: [],
   bootstrap: [AppComponent]
