@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +10,19 @@ export class NavbarComponent implements OnInit {
 
   public url: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+
+  }
 
   ngOnInit() {
 
-    this.url = this.router.url;
+    // Get current url (cannot use ActivatedRoute.url as outside of RouterOutlet)
+    this.router.events
+      .subscribe((event: any) => {
+        if (event instanceof NavigationEnd) {
+          this.url = event.url;
+        }
+      });
 
   }
 
