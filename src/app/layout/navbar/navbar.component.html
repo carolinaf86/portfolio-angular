@@ -16,6 +16,13 @@
         <li *ngIf="url === '/home'" class="nav-item"><a class="nav-link" pageScroll href="#projects">Projects</a></li>
         <li *ngIf="url === '/home'" class="nav-item"><a class="nav-link" pageScroll href="#cv">Contact</a></li>
 
+        <!-- cv page links -->
+        <li *ngIf="url === '/cv'" class="nav-item"><a class="nav-link" pageScroll href="#name-row">About</a></li>
+        <li *ngIf="url === '/cv'" class="nav-item"><a class="nav-link" pageScroll href="#skills-row">Skills</a></li>
+        <li *ngIf="url === '/cv'" class="nav-item"><a class="nav-link" pageScroll href="#experience-row">Experience</a></li>
+        <li *ngIf="url === '/cv'" class="nav-item"><a class="nav-link" pageScroll href="#education-row">Education</a></li>
+        <li *ngIf="url === '/cv'" class="nav-item"><a class="nav-link" pageScroll href="#languages-row">Languages</a></li>
+
         <li *ngIf="url !== '/cv'" class="nav-item my-auto">
           <a id="navbar-cv-btn" class="btn btn-primary navbar-btn" routerLink="/cv">CV</a>
         </li>
