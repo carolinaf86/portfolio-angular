@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import {faSpinner} from "@fortawesome/free-solid-svg-icons";
 
 class Contact {
   name: string;
@@ -15,10 +16,11 @@ class Contact {
 export class FooterComponent implements OnInit {
 
   public status: string = 'ready';
-
   public submissionError: boolean = false;
 
   public contact: Contact;
+
+  public faSpinner = faSpinner;
 
   constructor() { }
 
@@ -31,6 +33,9 @@ export class FooterComponent implements OnInit {
   onSubmit() {
     console.log('form submitted', this.contact);
     this.submissionError = false;
+
+    this.status = 'loading';
+
 
 
   }
