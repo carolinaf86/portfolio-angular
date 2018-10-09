@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
+
+class Contact {
+  name: string;
+  email: string;
+  message?: string;
+}
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +14,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public status: string = 'ready';
+
+  public submissionError: boolean = false;
+
+  public contact: Contact;
+
   constructor() { }
 
   ngOnInit() {
+
+    this.contact = new Contact();
+
+  }
+
+  onSubmit() {
+    console.log('form submitted', this.contact);
+    this.submissionError = false;
+
+
   }
 
 }
