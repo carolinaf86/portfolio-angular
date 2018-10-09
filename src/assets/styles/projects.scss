@@ -1,0 +1,63 @@
+@import 'theme/_variables';
+
+#project-detail-header {
+
+  height: 400px !important;
+  min-height: 0 !important;
+
+  #carouselChevronLeft, #carouselChevronRight {
+    &:focus {
+      opacity: 0.5 !important;
+    }
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    div.container {
+      padding-top: 150px;
+    }
+  }
+
+  &.masthead {
+
+    &.portfolio-1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../../assets/img/portfolio/1.jpg');
+    }
+
+    &.portfolio-2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../../assets/img/portfolio/2.jpg');
+    }
+
+    &.portfolio-3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../../assets/img/portfolio/3.jpg');
+    }
+
+    &.portfolio-4 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../../assets/img/portfolio/4.jpg');
+    }
+
+    &.portfolio-5 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../../assets/img/portfolio/5.jpg');
+    }
+
+  }
+
+}
+
+
+#project-detail {
+  padding-top: 6rem !important;
+  p {
+    // font-size: 1.2rem;
+    color: $gray-100 !important;
+    a {
+      color: $gray-100;
+      text-decoration: underline;
+      &:hover {
+        color: $gray-100;
+      }
+    }
+  }
+}
