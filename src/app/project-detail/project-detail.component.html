@@ -1,0 +1,38 @@
+<header id="project-detail-header"
+        class="masthead project-header text-center text-white d-flex"
+        [ngClass]="headerClass">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1">
+        <a id="carouselChevronLeft" class="carousel-control-prev mb-5" [routerLink]="prevUrl">
+          <fa-icon [icon]="faChevronLeft" size="3x"></fa-icon>
+        </a>
+      </div>
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong>{{ content.h1 }}</strong>
+        </h1>
+        <h3 class="mt-4">
+          {{ content.h3 }}
+        </h3>
+      </div>
+      <div class="col-lg-1">
+        <a id="carouselChevronRight" class="carousel-control-next mb-5" [routerLink]="nextUrl">
+          <fa-icon [icon]="faChevronRight" size="3x"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="project-detail" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p *ngFor="let paragraph of content.text" class="text-faded mb-5">
+          <span [innerHtml]="paragraph"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

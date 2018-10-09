@@ -12,6 +12,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ProjectsComponent } from './home/projects/projects.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
 import {NgsRevealModule} from 'ngx-scrollreveal';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
     FooterComponent,
     AboutComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
