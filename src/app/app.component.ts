@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PageScrollConfig} from "ngx-page-scroll";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio-angular';
+
+  constructor () {
+    // Configure scroll to
+    PageScrollConfig.defaultScrollOffset = 50;
+    PageScrollConfig.defaultDuration = 750;
+  }
 }
